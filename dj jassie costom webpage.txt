@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DJ Jassie Live Stream</title>
+  <style>
+    body {
+      background: #000;
+      color: #0f0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    audio {
+      width: 80%;
+      max-width: 400px;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎶 DJ Jassie Boat Ride Party 🎶</h1>
+  <p>Live Stream is playing below ⬇️</p>
+  
+  <audio controls autoplay>
+    <source src="http://krominancia.org:4550/;stream" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  
+  <p style="margin-top:20px;">Enjoy the vibes while sailing 🚤✨</p>
+</body>
+</html>
