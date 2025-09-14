@@ -20,23 +20,28 @@
       width: 80%;
       max-width: 400px;
       margin-top: 20px;
+      outline: none;
     }
     .instructions {
       margin-top: 20px;
       font-size: 14px;
       color: #ccc;
     }
+    .highlight {
+      color: #00ffcc;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
   <div class="player-container">
     <h1>🎶 DJ Jassie Live Stream 🎶</h1>
-    <audio controls autoplay>
+    <audio id="djPlayer" controls>
       <source src="http://krominancia.org:4550/;stream" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
     <div class="instructions">
-      <p>If the play button is grey, click it to start the music.</p>
+      <p class="highlight">🔊 Click the play button once to start the music.</p>
       <p>👉 Minimize this page to get back to the party.</p>
       <p>❌ Close this page to stop the player.</p>
     </div>
