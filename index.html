@@ -7,11 +7,13 @@
 <body style="background:black; color:lime; text-align:center; font-family:Arial; padding:50px;">
   <h1>🎧 DJ Jassie Live</h1>
   <p>Click Play to hear the vibes 🚤</p>
+
+  <!-- HTTPS proxy URL for safe playback -->
   <audio controls autoplay>
-    <source src="http://krominancia.org:4550/;stream" type="audio/mpeg">
-    <source src="http://krominancia.org:4550/" type="audio/mpeg">
+    <source src="https://krominancia.org/proxy/4550?mp=/stream" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
-  <p style="color:gray;">If Play is grey, click the 🔒 lock icon in your browser → allow insecure content.</p>
+
+  <p style="color:gray;">If Play is grey, refresh your browser after a few seconds.</p>
 </body>
 </html>
