@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DJ Jassie Player</title>
-<style>
-  body { background: black; color: white; text-align: center; font-family: Arial; margin:0; padding:0;}
-  .player-container { margin-top: 100px; }
-  audio { width: 80%; max-width: 400px; margin-top: 20px; outline:none; }
-  .instructions { color: #00ffcc; font-weight: bold; margin-top: 20px; font-size: 16px; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DJ Jassie Player</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    .player-container {
+      margin-top: 100px;
+    }
+    audio {
+      width: 80%;
+      max-width: 400px;
+      margin-top: 20px;
+      outline: none;
+    }
+  </style>
 </head>
 <body>
-<div class="player-container">
-  <h1>🎶 DJ Jassie Live Stream 🎶</h1>
-  <audio id="djPlayer" controls>
-    <source src="http://krominancia.org:4550/;stream" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-  <div class="instructions">
-    🔊 Click the play button once to start the music.<br>
-    👉 Minimize this page to get back to the party.<br>
-    ❌ Close this page to stop the player.
+  <div class="player-container">
+    <h1>🎶 DJ Jassie Live Stream 🎶</h1>
+    <audio controls>
+      <source src="http://krominancia.org:4550/;stream" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
   </div>
-</div>
-<script>
-  // Ensure button is clickable by adding user-triggered play
-  document.getElementById('djPlayer').addEventListener('click', function() {
-      this.play().catch(()=>{console.log("User must click to start.")});
-  });
-</script>
 </body>
 </html>
