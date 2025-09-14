@@ -2,18 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DJ Jassie Player</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    .player-container {
+      margin-top: 100px;
+    }
+    audio {
+      width: 80%;
+      max-width: 400px;
+      margin-top: 20px;
+    }
+    .instructions {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #ccc;
+    }
+  </style>
 </head>
-<body style="background:black; color:lime; text-align:center; font-family:Arial; padding:50px;">
-  <h1>🎧 DJ Jassie Live</h1>
-  <p>Click Play to hear the vibes 🚤</p>
-
-  <!-- HTTPS proxy URL for safe playback -->
-  <audio controls autoplay>
-    <source src="https://krominancia.org/proxy/4550?mp=/stream" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-
-  <p style="color:gray;">If Play is grey, refresh your browser after a few seconds.</p>
+<body>
+  <div class="player-container">
+    <h1>🎶 DJ Jassie Live Stream 🎶</h1>
+    <audio controls autoplay>
+      <source src="http://krominancia.org:4550/;stream" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <div class="instructions">
+      <p>If the play button is grey, click it to start the music.</p>
+      <p>👉 Minimize this page to get back to the party.</p>
+      <p>❌ Close this page to stop the player.</p>
+    </div>
+  </div>
 </body>
 </html>
